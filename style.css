@@ -16,23 +16,25 @@ a {
 }
 
 body {
-    background: center/cover url("SZARY.png");
     font-family: 'Albert Sans', sans-serif;
     max-width: 2560px;
+    background: center/cover url("Warp-2.jpg");
+    backdrop-filter: blur(2px);
 }
+
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px;
     max-width: 2560px;
 }
 
 .logo {
     color: white;
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.6em;
     letter-spacing: 5px;
 }
 
@@ -43,6 +45,7 @@ nav {
     justify-content: space-evenly;
     flex-grow: 1;
     color: white;
+    font-size: 1.3em;
 }
 
 .strony li a {
@@ -65,16 +68,15 @@ nav {
 .sociale {
     display: flex;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 2em;
 }
 
 .sociale img {
-    width: 20px;
+    width: 23px;
 }
 
 .hero {
-    margin-top: 100px;
-    padding: 0 50px;
+    padding: 150px 60px;
     display: flex;
     align-items: center;
 }
@@ -84,6 +86,8 @@ nav {
 }
 
 .right {
+    display: flex;
+    justify-content: right;
     width: 50%;
 }
 
@@ -98,18 +102,33 @@ h3 {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 2.8em;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 1.5em;
-    margin-top: 15px;
+    font-size: 2em;
+    margin-top: 40px;
     font-weight: 300;
 }
 
 h3 {
-    font-size: 1.2em;
-    margin-top: 25px;
+    font-size: 1.5em;
+    margin-top: 30px;
     font-weight: 200;
+}
+
+button {
+    margin-top: 40px;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    border-radius: 46px;
+}
+
+.about {
+    background-color: white;
+    height: 100vh;
 }
