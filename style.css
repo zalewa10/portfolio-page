@@ -19,7 +19,7 @@ body {
     font-family: 'Albert Sans', sans-serif;
     max-width: 2560px;
     background: center/cover url("Warp-2.jpg");
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
 }
 
 
@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px 20px;
     max-width: 2560px;
     background-color: #000008;
 
@@ -36,10 +36,11 @@ nav {
 .logo {
     color: white;
     font-weight: 500;
-    font-size: 1.6em;
+    font-size: 1.2em;
     letter-spacing: 5px;
 }
 
+/* 
 .strony {
     display: flex;
     flex-direction: row;
@@ -65,57 +66,56 @@ nav {
 
 .strony a:hover {
     color: #B89A76;
-}
+} */
 
 .sociale {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 1.2em;
 }
 
 .sociale img {
-    width: 23px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero {
-    padding: 150px 60px;
+    padding: 80px 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.left {
-    width: 50%;
-}
-
-.right {
-    display: flex;
-    justify-content: right;
-    width: 50%;
-}
 
 .right img {
-    max-width: 500px;
+    margin-top: 50px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 h1,
 h2,
 h3 {
     color: white;
+    text-align: center;
 }
 
 h1 {
-    font-size: 2.8em;
+    font-size: 2.2em;
     font-weight: 600;
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     margin-top: 40px;
     font-weight: 300;
+
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-top: 30px;
     font-weight: 200;
 }
@@ -128,9 +128,49 @@ button {
     color: white;
     border: 1px solid white;
     border-radius: 46px;
+    transition: color .4s ease;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-.about {
+button:hover {
     background-color: white;
-    height: 100vh;
+    color: black;
+    cursor: pointer;
 }
+
+
+.portfolio p {
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: 900;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.firma p {
+    font-weight: 500;
+    text-align: left;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    border-radius: 30px;
+    background-color: #040218a0;
+}
+
+.opis {
+    color: white;
+    font-weight: 200;
+}
+
+.projekt img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media screen and (min-width:1024px) {}
