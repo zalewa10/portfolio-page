@@ -95,7 +95,7 @@ nav {
 .right img {
     max-width: 100%;
     max-height: 100%;
-    padding: 60px 20px;
+    padding: 60px 20px 150px 20px;
 }
 
 h1,
@@ -123,7 +123,7 @@ h3 {
     font-weight: 200;
 }
 
-button {
+.but1 {
     margin-top: 40px;
     padding: 0.5em 1em;
     font-size: 1.2em;
@@ -138,14 +138,15 @@ button {
     align-items: center;
 }
 
-button:hover {
+.but1:hover {
     background-color: white;
     color: black;
     cursor: pointer;
 }
 
 
-.portfolio p {
+.portfolio p,
+.contact p {
     text-align: center;
     font-size: 1.6em;
     font-weight: 900;
@@ -153,31 +154,89 @@ button:hover {
     margin-bottom: 30px;
 }
 
-.firma p {
-    font-weight: 500;
-    text-align: left;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
 .card {
     display: flex;
     flex-direction: column;
-    padding: 20px 20px;
-    border-radius: 30px;
     background-color: #040218a0;
     margin-bottom: 20px;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.opis {
-    color: white;
-    font-weight: 200;
-    margin-bottom: 10px;
+.firma {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.firma a {
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.firma p {
+    font-weight: 400;
+    font-size: 1em;
+    color: white;
+    margin: 0;
+}
+
 
 .projekt img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.contact {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    margin-top: 150px;
+}
+
+.formularz {
+    background: no-repeat center/100% url("pusta.png");
+    width: 90%;
+}
+
+.inner {
+    padding: 50px 10px;
+}
+
+.formularz input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    background: none;
+    border: none;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
+.but2 {
+    padding: 0.5em;
+    margin: 0;
+    padding-bottom: 10px;
+    border: none;
+    background: none;
+    color: white;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-right: 20px;
 }
 
 @media screen and (min-width:1024px) {}
