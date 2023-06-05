@@ -27,7 +27,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     max-width: 2560px;
     background-color: #000008;
 
@@ -153,6 +153,8 @@ button:hover {
 .firma p {
     font-weight: 500;
     text-align: left;
+    font-size: 1.2em;
+    margin-bottom: 10px;
 }
 
 .card {
@@ -161,11 +163,13 @@ button:hover {
     padding: 20px 20px;
     border-radius: 30px;
     background-color: #040218a0;
+    margin-bottom: 20px;
 }
 
 .opis {
     color: white;
     font-weight: 200;
+    margin-bottom: 10px;
 }
 
 .projekt img {
