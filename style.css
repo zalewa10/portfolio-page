@@ -262,6 +262,10 @@ input:focus {
     padding: 10px 0;
 }
 
+.kont a {
+    color: #4af626;
+}
+
 .but2 {
     border: none;
     background: none;
