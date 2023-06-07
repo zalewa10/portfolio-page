@@ -28,7 +28,7 @@
             <h1>Hello world!</h1>
             <h2>Jestem Krzysztof, Frontend Developer</h2>
             <h3>Tworzę funkcjonalne strony internetowe, które wyróżnią Cię na tle innych.</h3>
-            <a href="#"><button class="but1">Porozmawiajmy</button></a>
+            <a href="#form"><button class="but1">Porozmawiajmy</button></a>
         </div>
         <div class="right"><img src="About.png" alt=""></div>
     </div>
@@ -37,7 +37,7 @@
         <div class="card">
             <div class="projekt"><img src="autos.jpg" alt=""></div>
             <div class="firma">
-                <a href="https://auto-s.pl">
+                <a target=”_blank” href="https://auto-s.pl">
                     Ośrodek Szkolenia Kierowców AUTO-S
                 </a>
                 <p>03.06.2023</p>
@@ -46,7 +46,7 @@
         <div class="card">
             <div class="projekt"><img src="collar.jpg" alt=""></div>
             <div class="firma">
-                <a href="https://zalewa10.github.io/collar-dog-final/">
+                <a target=”_blank” href="https://zalewa10.github.io/collar-dog-final/">
                     Collar Dog - projekt zaliczeniowy
                 </a>
                 <p>20.02.2023</p>
@@ -55,15 +55,54 @@
     </div>
     <div class="contact">
         <p>K O N T A K T</p>
-        <div class="formularz">
+
+        <div class="formularz" id="form">
             <div class="inner">
-                <input type="text" placeholder="C:\ Imie i nazwisko: >">
-                <input type="text" placeholder="C:\ Email: >">
-                <input type="text" placeholder="C:\ Wiadomosc: >">
-                <button class="but2">Send</button>
+                <p class="kont">Napisz na <b>kontakt.kzalewski@gmail.com</b> lub skorzystaj z poniższego formularza:</p>
+                <form action="https://formspree.io/f/xwkjyaaz" method="POST">
+                    <div class="formularz-row">
+                        <p>C:\klient\ Imie: ></p>
+                        <input required type="text" name="Imie i nazwisko">
+                    </div>
+                    <div class="formularz-row">
+                        <p>C:\klient\ Email: ></p>
+                        <input required type="email" name="E-mail">
+                    </div>
+                    <div class="formularz-row">
+                        <p>C:\klient\ Wiadomosc: ></p>
+                        <input required type="text" name="Wiadomosc">
+                    </div>
+                    <button class="but2">Send</button>
+                </form>
             </div>
         </div>
+
     </div>
+
+    <div class="footer">
+        <p>© Copyright - kzalewski.com</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var button = document.querySelector('.but1');
+            var form = document.querySelector('#form');
+
+            button.addEventListener('click', function (event) {
+                event.preventDefault();
+                form.scrollIntoView({ behavior: 'smooth' });
+                setTimeout(function () {
+                    form.querySelector('input:first-child').focus();
+                }, 700);
+            });
+        });
+    </script>
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+    </script>
 </body>
 
 </html>
