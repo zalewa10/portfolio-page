@@ -28,57 +28,54 @@
             <h1>Hello world!</h1>
             <h2>Jestem Krzysztof, Frontend Developer</h2>
             <h3>Tworzę funkcjonalne strony internetowe, które wyróżnią Cię na tle innych.</h3>
-            <a href="#form"><button class="but1">Porozmawiajmy</button></a>
+            <button class="but1" href="#form">Porozmawiajmy</button>
         </div>
         <div class="right"><img src="About.png" alt=""></div>
     </div>
     <div class="portfolio">
         <p>P O R T F O L I O</p>
-        <div class="card">
-            <div class="projekt"><img src="autos.jpg" alt=""></div>
-            <div class="firma">
-                <a target=”_blank” href="https://auto-s.pl">
-                    Ośrodek Szkolenia Kierowców AUTO-S
-                </a>
-                <p>03.06.2023</p>
+        <div class="projekty">
+            <div class="card">
+                <div class="projekt"><a href="https://auto-s.pl"><img src="autos.jpg" alt="projekt1"></a></div>
+                <div class="firma">
+                    <a target=”_blank” href="https://auto-s.pl">
+                        Ośrodek Szkolenia Kierowców AUTO-S
+                    </a>
+                    <p>03.06.2023</p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <div class="projekt"><img src="collar.jpg" alt=""></div>
-            <div class="firma">
-                <a target=”_blank” href="https://zalewa10.github.io/collar-dog-final/">
-                    Collar Dog - projekt zaliczeniowy
-                </a>
-                <p>20.02.2023</p>
+            <div class="card">
+                <div class="projekt"><a href="https://zalewa10.github.io/collar-dog-final/"><img src="collar.jpg"
+                            alt="projekt2"></a></div>
+                <div class="firma">
+                    <a target=”_blank” href="https://zalewa10.github.io/collar-dog-final/">
+                        Collar Dog - projekt zaliczeniowy
+                    </a>
+                    <p>20.02.2023</p>
+                </div>
             </div>
         </div>
     </div>
     <div class="contact">
         <p>K O N T A K T</p>
         <div class="formularz" id="form">
-            <div class="zdj"><img src="pusta.png" alt=""></div>
-            <div class="inner">
-                <p class="kont">Wyślij maila <a
-                        href="mailto:kontakt.kzalewski@gmail.com">kontakt.kzalewski@gmail.com</a>
-                    lub skorzystaj z formularza:</p>
-                <form action="https://formspree.io/f/xwkjyaaz" method="POST">
+            <!-- <p>Skontaktuj się mailowo:<a href="mailto:kontakt.kzalewski@gmail.com">kontakt.kzalewski@gmail.com</a>
+                lub skorzystaj z formularza:</p> -->
+            <form action="https://formspree.io/f/xwkjyaaz" method="POST">
+                <div class="razem">
                     <div class="formularz-row">
-                        <p>C:\klient\ Imie: ></p>
-                        <input required type="text" name="Imie i nazwisko">
+                        <input required type="text" name="Imie i nazwisko" id="name" placeholder="Imię i nazwisko:">
                     </div>
                     <div class="formularz-row">
-                        <p>C:\klient\ Email: ></p>
-                        <input required type="email" name="E-mail">
+                        <input required type="email" name="E-mail" id="email" placeholder="E-mail:">
                     </div>
-                    <div class="formularz-row">
-                        <p>C:\klient\ Wiadomosc: ></p>
-                        <input required type="text" name="Wiadomosc">
-                    </div>
-                    <button class="but2">Send</button>
-                </form>
-            </div>
+                </div>
+                <div class="formularz-row">
+                    <input required type="text" name="Wiadomosc" id="text" placeholder="Twoja wiadomość:">
+                </div>
+                <button class="but2">Wyślij wiadomość</button>
+            </form>
         </div>
-
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
